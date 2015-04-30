@@ -1,0 +1,10 @@
+name: Strayegg
+desription: No idea yet
+author: Simon Hooker
+author_email: simon@mso.net
+category_dir: /
+url: http://www.strayegg.com/
+
+permalink: pretty
+paginate: 3
+exclude: []
