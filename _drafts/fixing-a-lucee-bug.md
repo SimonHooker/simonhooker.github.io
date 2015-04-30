@@ -8,6 +8,8 @@ tags : [lucee, java, contributing-to-lucee]
 
 Blah blah synopsis blah blah
 
+<!--more-->
+
 <ul>
 	{% assign pages_list = site.tags.contributing-to-lucee %}  
 	{% include strayegg/list_of_links_in_ascending_order %}
