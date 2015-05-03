@@ -1,6 +1,5 @@
-# This is the default format. 
-# For more see: http://jekyllrb.com/docs/permalinks/
-permalink: /:categories/:year/:month/:day/:title 
+
+permalink: /:year/:month/:day/:title 
 
 exclude: 
   - .rvmrc
@@ -14,9 +13,6 @@ exclude:
 
 highlighter: pygments
 
-# Themes are encouraged to use these universal variables 
-# so be sure to set them if your theme uses them.
-#
 title : Strayegg
 tagline: Hobo-egg was here
 author :
@@ -24,18 +20,7 @@ author :
   email : simon@mso.net
   github : SimonHooker
   twitter : SimonHooker
+  disqus : strayegg
+  analytics : 'UA-38996619-2'
 
 production_url : http://www.strayegg.com
-
-strayegg :
-
-  comments :
-    provider : disqus
-    disqus :
-      short_name : strayegg
-
-  analytics :
-    provider : google 
-    google : 
-        tracking_id : 'UA-38996619-2'
-
