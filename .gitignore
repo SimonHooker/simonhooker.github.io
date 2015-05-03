@@ -10,3 +10,6 @@ Thumbs.db
 .rvmrc
 
 startup.bat
+
+node_modules/*
+bower_components/*
