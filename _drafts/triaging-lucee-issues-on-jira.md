@@ -4,11 +4,8 @@ category : lucee
 tagline: "or: How I Learned to Stop Worrying and Love the Compiler"
 tags : [lucee, jira, git, java, contributing-to-lucee]
 ---
-{% include JB/setup %}
 
 Blah blah synopsis blah blah
-
-<!--more-->
 
 <ul>
 	{% assign pages_list = site.tags.contributing-to-lucee %}  

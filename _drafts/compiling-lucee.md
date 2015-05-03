@@ -4,12 +4,8 @@ category : lucee
 tagline: "Every ant has his day"
 tags : [lucee, java, contributing-to-lucee]
 ---
-{% include JB/setup %}
-
 
 Blah blah synopsis blah blah
-
-<!--more-->
 
 <ul>
 	{% assign pages_list = site.tags.contributing-to-lucee %}  

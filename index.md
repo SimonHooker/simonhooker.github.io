@@ -3,7 +3,7 @@ layout: page
 title: Strayegg
 tagline: Simon Hookers ramblings
 ---
-{% include JB/setup %}
+
 
 
 {% if site.posts %}
@@ -21,13 +21,6 @@ tagline: Simon Hookers ramblings
         {{ post.content }}
       </div>
 
-    {% unless post.tags == empty %}
-      <ul class="tag_box inline">
-        <li><i class="glyphicon glyphicon-tags"></i></li>
-        {% assign tags_list = post.tags %}
-        {% include JB/tags_list %}
-      </ul>
-    {% endunless %}  
     
 
     </div>

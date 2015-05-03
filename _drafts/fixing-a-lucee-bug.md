@@ -2,13 +2,10 @@
 layout: post
 category : lucee
 tagline: "or: How I Learned to Stop Worrying and Love the Compiler"
-tags : [lucee, java, contributing-to-lucee]
+tags : [lucee, java]
 ---
-{% include JB/setup %}
 
 Blah blah synopsis blah blah
-
-<!--more-->
 
 <ul>
 	{% assign pages_list = site.tags.contributing-to-lucee %}  
