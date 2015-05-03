@@ -4,10 +4,8 @@ var gulp 	= require('gulp'),
 	concat 	= require('gulp-concat')
 	watch	= require( 'gulp-watch');
 
-var css_source = './stylesheet/_src/strayegg.less';
-
 gulp.task('css', function () {
-	return gulp.src( css_source )
+	return gulp.src( './stylesheet/_src/strayegg.less' )
 		.pipe(less())
 		.pipe(csso())
 		.pipe(concat('strayegg.css'))
@@ -19,5 +17,5 @@ gulp.task('default', ['css'], function () {
 });
 
 gulp.task('watch',function(){
-	gulp.watch( css_source , [ 'css' ] );
+	gulp.watch( './stylesheet/_src/*.less' , [ 'css' ] );
 });
