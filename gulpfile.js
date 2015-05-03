@@ -4,7 +4,7 @@ var gulp 	= require('gulp'),
 	concat 	= require('gulp-concat')
 	watch	= require( 'gulp-watch');
 
-var css_source = './stylesheet/strayegg.less';
+var css_source = './stylesheet/_src/strayegg.less';
 
 gulp.task('css', function () {
 	return gulp.src( css_source )
