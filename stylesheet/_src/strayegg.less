@@ -6,12 +6,16 @@
 @import "font-awesome";
 @import "google-custom-search";
 
-@media (min-width: @screen-sm-min) {
+@media (min-width: @screen-md-min) {
 
 	article.page-frame {
-		padding-top:5em;
+		padding-top:2em;
 	}
 
+}
+
+body {
+	padding-bottom: 2em;
 }
 
 div.bio-column {
@@ -35,15 +39,19 @@ h4.year {
 
 	div {
 		position : absolute;
-		top : 0;
+		top : 20px;
 		left : 0;
+		transform: rotate(-90deg);
+		font-size:2em;
 	}
 }
 
 article.index-post {
 	
 	> div.date {
-
+		small {
+			display:block;
+		}
 	}
 
 	> div.content {

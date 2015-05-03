@@ -1,7 +1,8 @@
 
 <article class="row index-post">
 	<div class="hidden-xs col-sm-2 col-sm-offset-1 date">
-		{{ post.date | date: '%B %d' }}
+		{{ post.date | date: '%A %-d' }}
+		<small>{{ post.date | date: '%B' }}</small>
 	</div>
 	<div class="col-xs-12 col-sm-9 content">
 		<h2>
@@ -9,7 +10,8 @@
 		</h2>
 		{% if post.tagline %}<h3>{{ post.tagline }}</h3>{% endif %}
 		<p class="visible-xs-block date">
-			{{ post.date | date_to_string }}
+			{{ post.date | date: '%A %-d' }}
+			<small>{{ post.date | date: '%B' }}</small>
 		</p>
 		<p class="tags">
 			Tags
