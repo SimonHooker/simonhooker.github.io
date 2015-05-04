@@ -6,27 +6,44 @@
 @import "font-awesome";
 @import "google-custom-search";
 
-@media (min-width: @screen-md-min) {
-
-	article.page-frame {
-		padding-top:2em;
-	}
-
-}
 
 body {
 	padding-bottom: 2em;
+	background: url(/assets/photos/PC160259.jpg) no-repeat center center fixed; 
+    background-size: cover;
 }
 
 div.bio-column {
-	margin-top : 1em;
+	> div {
+		margin-top : 1em;
 
-	div.bio-box {
-		margin-bottom : 0;
+		div.bio-box {
+			.well;
+			margin-bottom : 0;
+			border-radius: 1em;
 
-		div.hobo-egg {
-			.text-center;
-			margin-bottom : 1em;
+			div.hobo-egg {
+				.text-center;
+				margin-bottom : 1em;
+			}
+
+			> p:last-child {
+				margin-bottom: 0;
+			}
+		}
+
+		ul.list-group {
+			li {
+				&:first-child {
+					border-top-right-radius : 1em;
+					border-top-left-radius : 1em;
+				}
+
+				&:last-child {
+					border-bottom-right-radius : 1em;
+					border-bottom-left-radius : 1em;
+				}
+			}
 		}
 	}
 }
@@ -46,7 +63,13 @@ h4.year {
 	}
 }
 
+article.page-frame {
+	background : #FFFFFF;
+	border-radius : 1em;
+}
+
 article.index-post {
+	margin-bottom: 1em;
 	
 	> div.date {
 		small {
@@ -100,4 +123,19 @@ div.panel.image {
 
 		}
 	}
+}
+
+
+@media (min-width: @screen-md-min) {
+
+	article.page-frame {
+		margin-top:2em;
+	}
+
+	div.bio-column {
+		> div:first-child {
+			margin-top : 2em;
+		}
+	}
+
 }
