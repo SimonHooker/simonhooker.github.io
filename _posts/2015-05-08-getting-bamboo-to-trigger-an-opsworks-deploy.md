@@ -1,7 +1,7 @@
 ---
 layout: post
 category : aws
-tagline: "He came 8 years too late for dinner - and he had a fantastic excuse..."
+tagline: "Summertime is Pandatime."
 tags : [bamboo,opsworks,aws,deploy,node]
 ---
 
