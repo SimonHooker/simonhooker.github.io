@@ -18,16 +18,12 @@ You will require the following from AWS prior to starting
 - The name(s) of the stack(s) that you'd like to deploy to
 - The name(s) of the app(s) that you'd like to deploy
 
-First of all you will need to configure the following variables in your Plan Configuration (please note, the character case is important)
-
-- **awsID** = Your IAM Access Key
-- **awsSecret** = Your IAM Secret Key
-- **awsRegion** = us-east-1
-- **awsStacks** = name(s) of the app(s) that you'd like to deploy as a comma-seperated string
-- **awsApps** = name(s) of the app(s) that you'd like to deploy as a comma-seperated string
-
 Bamboo will need the following tasks in its own job seperate from any other repo-based stuff
 
-1. **Script** git clone https://github.com/SimonHooker/deploy-to-opsworks .
-2. **npm** install
-3. **Node.js** deployToOpsworks.js
+1. *Script* git clone https://github.com/SimonHooker/deploy-to-opsworks .
+2. *npm* install
+3. *Node.js* deployToOpsworks.js awsID=*awsID* secret=*awsSecret* stacks=*awsStacks* apps=*awsApps*
+	- **awsID** = Your IAM Access Key
+	- **awsSecret** = Your IAM Secret Key
+	- **awsStacks** = name(s) of the app(s) that you'd like to deploy as a comma-seperated string
+	- **awsApps** = name(s) of the app(s) that you'd like to deploy as a comma-seperated string
