@@ -7,7 +7,7 @@ tags : [lucee, jira, git, java]
 
 So you have some free time and would like to help improve Lucee, but oh no! You dont know any Java.  Well there's always documentation ... isn't that everyone's idea of a good time?  Well good news, there is a vital part of the Lucee issue process that you can turn your attention to ... triage.
 
-What is triage? Put simply it is the process of confirming a bug and providing means to reproduce it. Usually this will be done by creating a test suite and attaching it to the ticket. This then allows whoever later decides to work on it to confirm easily that the issue hasn't been fixed by an update since reporting or triage. It also allows regression checks to confirm that the issue doesn't recur due to a change made down the line.
+What is triage? Put simply it is the process of confirming a bug and providing means to reproduce it. Usually this will be done by creating a test suite and attaching it to the ticket. This then allows whoever later decides to work on it to confirm easily that the issue hasn't been fixed by an update since reporting or triage. It also allows regression checks to confirm that the issue doesn't reoccurs due to a change made down the line.
 
 ## Get access to the Lucee JIRA board
 
