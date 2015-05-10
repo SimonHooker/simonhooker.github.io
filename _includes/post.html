@@ -8,7 +8,7 @@
 		<h2>
 			<a href="{{ post.url }}">{{ post.title }}</a>
 		</h2>
-		{% if post.tagline %}<h3>{{ post.tagline }}</h3>{% endif %}
+		{% if post.tagline %}<h3 class="hidden-xs">{{ post.tagline }}</h3>{% endif %}
 		<p class="visible-xs-block date">
 			{{ post.date | date: '%A %-d' }}
 			<small>{{ post.date | date: '%B' }}</small>

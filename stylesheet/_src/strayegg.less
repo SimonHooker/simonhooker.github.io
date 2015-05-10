@@ -21,10 +21,22 @@ div.bio-column {
 			border-radius: 1em;
 			background-color: #FFFFFF;
 
-			div.hobo-egg {
-				.text-center;
+			a.home-link {
+
+				display: block;
 				margin-bottom : 1em;
+
+				div.hobo-egg {
+					.text-center;
+				}
+
+				h1 {
+					font-size: 16px;
+					text-decoration: none;
+					font-weight: bold;
+				}
 			}
+
 
 			> p:last-child {
 				margin-bottom: 0;
@@ -67,47 +79,9 @@ article.page-frame {
 	border-radius : 1em;
 }
 
-article.index-post {
-	margin-bottom: 1em;
-	
-	> div.date {
-		small {
-			display:block;
-		}
-	}
+@import "index-post.less";
+@import "main-post.less";
 
-	> div.content {
-		> h2 {
-			margin: 0;
-
-			> a {
-
-			}
-		}
-
-		> h3 {
-			margin: 0;
-
-		}
-
-		> p {	
-			margin: 0;
-		}
-
-		> p.date {
-
-		}
-
-		> p.tags {
-
-			> a {
-
-			}
-
-		}
-	}
-
-}
 
 div.panel.image {
 	div.panel-body {
