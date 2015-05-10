@@ -62,7 +62,7 @@ This allows others to easily see the problem themselves in addition to allowing 
 
 Now that you have reproduced the problem it's time to create unit tests.  Under the hood Lucee uses [TestBox](http://wiki.coldbox.org/wiki/TestBox.cfm) for its unit tests.  Personally I prefer the BDD-style definitions of unit tests, but either style is acceptable as long as the tests do the job.  To get started on your suite do the following.
 
-1. Create a file titled LDEV-**{ticket number}**.cfc (i.e. LDEV-224.cfc). *You will see some older tickets have unit tests titled Issue**{number}**.cfc - these numbers are based off the old BitBucket issue tracker. 
+1. Create a file titled LDEV-**{ticket number}**.cfc (i.e. LDEV-224.cfc). *You will see some older tickets have unit tests titled Issue**{number}**.cfc - these numbers are based off the old BitBucket issue tracker.*
 2. Paste in the unit test skeleton shown under this list.
 3. Put in as many tests and describe blocks as you need to reproduce the issue reliably.  
 4. Optionally you can also include some tests that cover related functionality.  Perhaps the bug report was stating a discrepancy between a tag and a script function that needs addressing - if so why not include a passing test on whichever is working as intended?
