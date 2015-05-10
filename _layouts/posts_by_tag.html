@@ -1,0 +1,18 @@
+---
+layout: page
+---
+<h1>
+	<small>Articles about</small>
+	{{ page.tag }}
+</h1>
+
+{% if content %}
+	{{content}}
+{% endif %}
+
+{% if site.tags[page.tag] %}
+	{% assign posts_to_render = site.tags[page.tag] %}
+	{% include posts.html %}
+{% else %}
+    <p>There are no posts for this tag.</p>
+{% endif %}
