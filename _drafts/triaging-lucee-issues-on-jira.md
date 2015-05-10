@@ -5,15 +5,15 @@ tagline: "Balancing the books and the bedpans"
 tags : [lucee, jira, git, java]
 ---
 
-So you have some free time and would like to help improve Lucee, but oh no! You dont know any Java.  Well there's always documentation ... isnt that everyone's idea of a good time?  Well good news, there is a vital part of the Lucee issue process that you can turn your attention to ... triage.
+So you have some free time and would like to help improve Lucee, but oh no! You dont know any Java.  Well there's always documentation ... isn't that everyone's idea of a good time?  Well good news, there is a vital part of the Lucee issue process that you can turn your attention to ... triage.
 
-What is triage? Put simply it is the process of confirming a bug and providing simple means to reproduce it. Usually this will be done by creating a test suite and attaching it to the ticket. This then allows whoever later decides to work on it to confirm easily that the issue hasn't been fixed by an update since reporting or triage. It also allows confirmation that the issue doesnt later recur.
+What is triage? Put simply it is the process of confirming a bug and providing means to reproduce it. Usually this will be done by creating a test suite and attaching it to the ticket. This then allows whoever later decides to work on it to confirm easily that the issue hasn't been fixed by an update since reporting or triage. It also allows regression checks to confirm that the issue doesn't recur due to a change made down the line.
 
 ## Get access to the Lucee JIRA board
 
 Still interested? Great!  Do you have a Lucee JIRA account?  If not then you'd best create one on the [Lucee JIRA board](https://luceeserver.atlassian.net/secure/Dashboard.jspa).  
 
-Now you have that, do you have the access level that you'll need to perform triage?  Possibly not.  Not to worry, if you have a look at the introduction on the system dashboard of the JIRA board you'll see the contact details at the bottom.  Just fire off an email and rewuest permission to triage tickets.
+Now you have that, do you have the access level that you'll need to perform triage?  Possibly not.  Not to worry, if you have a look at the introduction on the system dashboard of the JIRA board you'll see the contact details at the bottom.  Just fire off an email and request permission to triage tickets.
 
 Assuming that all gets granted (which hopefully it will do) then you're now ready to actually get started.
 
@@ -47,11 +47,11 @@ Have a look through the tickets and find one that interests you. Alternatively y
 
 See title.  Read it, make sure you understand it.  If uncertain then ask the person that posted the issue questions.  How are you meant to create unit tests to reproduce an issue if you don't understand it?  If more information is required then feel free to send the ticket back to **Need More Details**.
 
-That's kind of it for this section really.  Read the ticket, comprehende, that is all.
+That's kind of it for this section really.  Read the ticket, comprehend, that is all.
 
 ## Reproduce the problem
 
-The next thing you will need is a Lucee environment to test on. For now you can find instructions for this in the [Lucee wiki](https://bitbucket.org/lucee/lucee/wiki/Download%20and%20Install).  Also check the instructons in [the Lucee test README](https://bitbucket.org/lucee/lucee/src/af6a8c8cc5f550e3034dba8a98167f51a7393e1d/tests/README.md?at=master) for any mappings and configuration you need.
+The next thing you will need is a Lucee environment to test on. For now you can find instructions for this in the [Lucee wiki](https://bitbucket.org/lucee/lucee/wiki/Download%20and%20Install).  Also check the instructions in [the Lucee test README](https://bitbucket.org/lucee/lucee/src/af6a8c8cc5f550e3034dba8a98167f51a7393e1d/tests/README.md?at=master) for any mappings and configuration you need.
 
 The most basic and often easiest way to reproduce the issue is to just create a simple CFML script that reproduces the issue.  For example in [LDEV-224](https://luceeserver.atlassian.net/browse/LDEV-224) you can see in the description that I created and posted the simple CFML script that reproduced the issue when I created the bug report.  Many bug reports are not that complete (hence the need for triage).  
 
@@ -65,7 +65,7 @@ Now that you have reproduced the problem it's time to create unit tests.  Under 
 1. Create a file titled LDEV-**{ticket number}**.cfc (i.e. LDEV-224.cfc). *You will see some older tickets have unit tests titled Issue**{number}**.cfc - these numbers are based off the old BitBucket issue tracker. 
 2. Paste in the unit test skeleton shown under this list.
 3. Put in as many tests and describe blocks as you need to reproduce the issue reliably.  
-4. Optionally you can also include some tests that cover related functionality.  Perhaps the bug report was stating a discrepency between a tag and a script function that needs addressing - if so why not include a passing test on whichever is working as intended?
+4. Optionally you can also include some tests that cover related functionality.  Perhaps the bug report was stating a discrepancy between a tag and a script function that needs addressing - if so why not include a passing test on whichever is working as intended?
 5. Check your tests to make sure they pass/fail as you expect them to
 
 {% highlight JavaScript %}
@@ -110,9 +110,9 @@ Well done you've just created some unit tests for a Lucee issue!
 
 All that remains to be done now is to get those unit tests on the ticket.  To do this just click on **Attach Files** (usually under the **More** menu) and select your cfc.  If any additional supporting information is needed then it doesn't hurt to chuck up a comment too.
 
-Now that's all done send it to the **Awaiting Apporval** stage.  The ticket will then be assessed by the Lucee Core Development team and hopefully it will be pushed into the backlog for developlment.  The key points that will most likely be discussed at this point are the following.
+Now that's all done send it to the **Awaiting Approval** stage.  The ticket will then be assessed by the Lucee Core Development team and hopefully it will be pushed into the backlog for development.  The key points that will most likely be discussed at this point are the following.
 
-- Is the issue reproducable? ( Ideally through unit tests as this makes development easier )
+- Is the issue reproducible? ( Ideally through unit tests as this makes development easier )
 - Has the issue already been fixed in a future version?
 - Is this something that will be fixed? ( Some functionality may be deemed a low priority due to its use being relatively niche.  In these cases there is nothing stopping someone fixing the issue and submitting a pull request for inclusion in a future Lucee version - it just means that it won't be considered a priority for the Lucee project )
 - In the cases of new features, is this something that would be desirable?
