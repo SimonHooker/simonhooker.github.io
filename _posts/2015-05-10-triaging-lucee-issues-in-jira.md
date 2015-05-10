@@ -7,7 +7,7 @@ tags : [lucee, jira, git, java]
 
 So you have some free time and would like to help improve Lucee, but oh no! You dont know any Java.  Well there's always documentation ... isn't that everyone's idea of a good time?  Well good news, there is a vital part of the Lucee issue process that you can turn your attention to ... triage.
 
-What is triage? Put simply it is the process of confirming a bug and providing means to reproduce it. Usually this will be done by creating a test suite and attaching it to the ticket. This then allows whoever later decides to work on it to confirm easily that the issue hasn't been fixed by an update since reporting or triage. It also allows regression checks to confirm that the issue doesn't reoccurs due to a change made down the line.
+What is triage? Put simply it is the process of confirming a bug and providing means to reproduce it. Usually this will be done by creating a test suite and attaching it to the ticket. This then allows whoever later decides to work on it to confirm easily that the issue hasn't been fixed by an update since reporting or triage. It also allows regression checks to confirm that the issue doesn't reoccur due to a change made down the line.
 
 ## Get access to the Lucee JIRA board
 
@@ -19,7 +19,7 @@ Assuming that all gets granted (which hopefully it will do) then you're now read
 
 ## Find an issue to triage
 
-Now you need to find something to triage. If you go to [Lucee Development Triage board](https://luceeserver.atlassian.net/secure/RapidBoard.jspa?rapidView=3&useStoredSettings=true) you will see the column titled "New".  These are tickets that have been created but have not yet been looked at by anyone.  In general you are probably going to want to start of triaging bugs in the current release. To filter down to just these tickets then do the following.
+Now you need to find something to triage. If you go to the [Lucee Development Triage board](https://luceeserver.atlassian.net/secure/RapidBoard.jspa?rapidView=3&useStoredSettings=true) you will see the column titled "New".  These are tickets that have been created but have not yet been looked at by anyone.  In general you are probably going to want to start of triaging bugs in the current release. To filter down to just these tickets then do the following.
 
 1. Click on  **Issues** (top menu) 
 2. Click on **Search for issues**
