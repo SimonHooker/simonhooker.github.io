@@ -12,6 +12,14 @@ layout: page
 			</small>
 			{{ page.date | date: '%A %-d %B %Y' }}
 		</h3>
+		<p class="tags">
+			Tags
+			{% for tag in page.tags %} 
+				<a href="/tag/{{ tag }}">
+					{{ tag }}
+				</a>
+			{% endfor %}
+		</p>
 	</div>
 	<div class="post-full">
 		{{ content }}

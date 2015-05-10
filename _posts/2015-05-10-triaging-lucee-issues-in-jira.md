@@ -2,7 +2,7 @@
 layout: post
 category : lucee
 tagline: "Balancing the books and the bedpans"
-tags : [lucee, jira, git, java]
+tags : [lucee, jira, testbox, triage]
 ---
 
 So you have some free time and would like to help improve Lucee, but oh no! You dont know any Java.  Well there's always documentation ... isn't that everyone's idea of a good time?  Well good news, there is a vital part of the Lucee issue process that you can turn your attention to ... triage.
