@@ -1,7 +1,7 @@
 ---
 layout: post
 category : lucee
-tagline: "or: How I Learned to Stop Worrying and Love the Compiler"
+tagline: "Balancing the books and the bedpans"
 tags : [lucee, jira, git, java]
 ---
 
