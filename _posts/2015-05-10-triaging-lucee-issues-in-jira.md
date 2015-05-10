@@ -110,7 +110,9 @@ Well done you've just created some unit tests for a Lucee issue!
 
 All that remains to be done now is to get those unit tests on the ticket.  To do this just click on **Attach Files** (usually under the **More** menu) and select your cfc.  If any additional supporting information is needed then it doesn't hurt to chuck up a comment too.
 
-Now that's all done send it to the **Awaiting Approval** stage.  The ticket will then be assessed by the Lucee Core Development team and hopefully it will be pushed into the backlog for development.  The key points that will most likely be discussed at this point are the following.
+Now that's all done send it to the **Awaiting Approval** stage.  At this point don't forget to take yourself off the ticket.  You can do this by clicking on **Assign User** and selecting **Unassigned**.  
+
+The ticket will next be assessed by the Lucee Core Development team and hopefully it will be pushed into the backlog for development.  The key points that will most likely be discussed at this point are the following.
 
 - Is the issue reproducible? ( Ideally through unit tests as this makes development easier )
 - Has the issue already been fixed in a future version?
@@ -128,4 +130,4 @@ By performing triage you allow any developers to concentrate more on development
 3. Reproduce the issue
 4. Create a unit test
 5. Attach the unit test to the issue in JIRA
-6. Move the JIRA issue to **Awaiting Approval**
+6. Move the JIRA issue to **Awaiting Approval** - don't forget to unassign it!
