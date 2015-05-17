@@ -13,10 +13,9 @@ For this example I'll use the AWS documents mostly because that's what I was rea
 
 So the first thing I did here was to try and use CreateObject to make an AmazonS3 object.  That's probably what I want right?  So I clicked through on the option "AmazonS3" under "Interfaces".  If I was paying attention and knew what I was doing I may have not done that.
 
-You can search all you like in the AmazonS3 interface page but you won't find the constructor.  This might not seem important, but without a constructor you'll have a hard time creating the object which in turn you'll look to use.  Well there's a nice little java document titled [What Is an Interface?](https://docs.oracle.com/javase/tutorial/java/concepts/interface.html) which explains this better than I can, specifcally this line. *In its most common form, an interface is a group of related methods with empty bodies*.  Empty... Great.
+You can search all you like in the AmazonS3 interface page but you won't find the constructor.  This might not seem important, but without a constructor you'll have a hard time creating the object which in turn you'll look to use.  Well there's a nice little java document titled [What Is an Interface?](https://docs.oracle.com/javase/tutorial/java/concepts/interface.html) which explains this better than I can, specifically this line. *In its most common form, an interface is a group of related methods with empty bodies*.  Empty... Great.
 
-Well an empty shell is no use to us.  In general you can ignore them if all you are trying to do is use someone elses library.  For my example in the [AmazonS3 interface documentation](http://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/s3/AmazonS3.html) there is a section titled **All Known Implementing Classes** - this is what is useful to us.  Additionally this list is back in that original [com.amazonaws.services.s3 documentation](http://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/s3/package-summary.html)  under the heading **Class Summary**.
-
+Well an empty shell is no use to us.  In general you can ignore them if all you are trying to do is use a preexisting library.  For my example in the [AmazonS3 interface documentation](http://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/s3/AmazonS3.html) there is a section titled **All Known Implementing Classes** - this is what is useful to us.  Additionally this list is back in that original [com.amazonaws.services.s3 documentation](http://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/s3/package-summary.html)  under the heading **Class Summary**.
 
 ## Creating an instance a Java object
 
@@ -28,7 +27,7 @@ In CFML you will have seen constructors when setting up components.  That's what
 
 Now in Java there is a bit of a difference to CFML when it comes to method definitions.  In CFML you define a single function and can specify optional arguments.  In Java though the methods arguments *and their types* are as important as the method name when it comes to deciding what method to run.
 
-This is why in many examples of others using Java objects directly in CFMl you will see JavaCast being used.  This is because whilst you may wish to supply a numeric value to an object, that Java object may expect a String or possibly a specific Numeric data type which doesn't match the type that CFML maps your numeric value to.
+This is why in many examples of others using Java objects directly in CFML you will see JavaCast being used.  This is because whilst you may wish to supply a numeric value to an object, that Java object may expect a String or possibly a specific Numeric data type which doesn't match the type that CFML maps your numeric value to.
 
 Be very careful what arguments you pass to java functions, as passing the wrong data types will result in one of two things.  You will either call the wrong function, or be told simply that the method with the specified arguments is undefined.  Either of these is an indication that you need to check your arguments (or simply that you've typed the wrong function name).
 
@@ -63,7 +62,7 @@ Ok so you've now got a class.  What can you do with it?  Well hop back to the [A
 	// Lets get some buckets
 	buckets = s3.listBuckets();
 
-So we now have a result for buckets.  This is a **java.lang.list** of **com.amazonaws.services.s3.model.Bucket** objects.  What can you do with this?  Well you can just give up now and go home right?   Well finding the Bucket documentation is easy, you just click on it.  What do you do with a **java.lang.list** though?   Well, load up google, see what comes up.  You'll find the documents for [java.lang.list](https://docs.oracle.com/javase/7/docs/api/java/util/List.html) look a bit less scary now.  It's a fair bet that you'll want to iterate over the list so why don't we get an interator and dump now the name of every bucket?
+So we now have a result for buckets.  This is a **java.lang.list** of **com.amazonaws.services.s3.model.Bucket** objects.  What can you do with this?  Well you can just give up now and go home right?   Well finding the Bucket documentation is easy, you just click on it.  What do you do with a **java.lang.list** though?   Well, load up google, see what comes up.  You'll find the documents for [java.lang.list](https://docs.oracle.com/javase/7/docs/api/java/util/List.html) look a bit less scary now.  It's a fair bet that you'll want to iterate over the list so why don't we get an iterator and dump now the name of every bucket?
 
 	// Ok so this is now a java.lang.list of com.amazonaws.services.s3.model.Bucket objects
 	// Get the iterator
@@ -83,7 +82,7 @@ So we now have a result for buckets.  This is a **java.lang.list** of **com.amaz
 
 ## That's all folks
 
-So that's my rough guide for how to come to terms with Java documents.  Now it hasn't really taught you anything that useful with respect to using the AWS S3 SDK but maybe it wil help you find that out.  In case you want the brief summary of this, here's a few important points.
+So that's my rough guide for how to come to terms with Java documents.  Now it hasn't really taught you anything that useful with respect to using the AWS S3 SDK but maybe it will help you find that out.  In case you want the brief summary of this, here's a few important points.
 
 - Invoke Classes, not Interfaces
 - Pay attention to the arguments
