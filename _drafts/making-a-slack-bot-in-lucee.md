@@ -6,7 +6,7 @@ tags : [lucee, slack]
 
 My company, like many others now, is using Slack quite heavily.  I thought it might be nice to have a bot to do a few tasks.  The sensible thing to do here would be to go and pick up [Hubot](https://hubot.github.com/) and customise that right?  Well, maybe down the line.
 
-For now I feel like learning something new.  I could of course make my own NodeJS bot.  In fact I did in the form of my first  [Hobobot](https://github.com/SimonHooker/hobobot) (named after my little egg mascot).  That bot doesn't really do much, it's more of a proof of concept.  Unfortunately I felt like I had little additional understanding of how sockets were working due to NodeJS and the Slack Node API making it rather magical.
+For now I feel like learning something new.  I could of course make my own NodeJS bot.  In fact I did in the form of my first  [Hobobot](https://github.com/SimonHooker/hobobot) (named after my little egg mascot).  That bot doesn't really do much, it's more of a proof of concept.  But I'm bored of reading about NodeJS.  Java time!
 
 So how about I try and implement the [Real Time Messaging API](https://api.slack.com/rtm) in [Lucee](http://lucee.org/)?
 
