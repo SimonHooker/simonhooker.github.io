@@ -13,6 +13,10 @@ Took a look through backlog, picked out LDEV-467 because it was one I had previo
 
 ## Reproducing
 
+Well this is easy, it's been triaged properly and has a unit test CFC.  Download it and commit it to a branch on my fork, woohoo.
+
+If no tests, then figure out some reproduction code and create unit test, testbox etc.
+
 ## An example debugging a bug 
 
 LDEV-90 could be good for this
