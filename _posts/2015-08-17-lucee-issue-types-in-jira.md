@@ -4,13 +4,13 @@ category : lucee
 tags : [lucee, jira]
 ---
 
-A couple of days ago following discussion between Adam Cameron and myself on Twitter a new issue type was added to the Lucee Jira board, "Incompatibility".  Since then we have discussed the gray line where a bug becomes an incompatibility and vica versa and so I thought I'd just write up my stance on the various issue types.
+A couple of days ago following discussion between Adam Cameron and myself on Twitter a new issue type was added to the Lucee Jira board, "Incompatibility".  Since then we have discussed the gray line where a bug becomes an incompatibility and vice versa and so I thought I'd just write up my stance on the various issue types.
 
-For the record, everything in this blog post is how I interprete the various issue types.  This is not in any way an official LAS position, but I'd like to think that it all makes some logical sense.
+For the record, everything in this blog post is how I interpret the various issue types.  This is not in any way an official LAS position, but I'd like to think that it all makes some logical sense.
 
 # What's the point of the issue types?
 
-The difference bettween Bug/Incompatibility and Enhancement/Proposal is pretty clear cut.  The reason for distinguishing between those pairs is simple - it's classifying a specific as being a fix for something existing or broke vs something that is an addition or new.
+The difference between Bug/Incompatibility and Enhancement/Proposal is pretty clear cut.  The reason for distinguishing between those pairs is simple - it's classifying a specific as being a fix for something existing or broke vs something that is an addition or new.
 
 Additions need to be evaluated prior to implementation to make sure they are a good idea, where as bugs and incompatibility issues are usually clearly something that needs fixing.  In addition to this if something is broken in a "stable" release then that should take priority as it will be affecting production users.
 
@@ -50,7 +50,7 @@ Where something is not a bug but is a change in functionality that would be nice
 
 Lucee aims to allow code written for Adobe ColdFusion to work on Lucee.  Lucee does not, and can not, make promises that all code written that works on Lucee will work the same way on Adobe ColdFusion because that would prevent any development that isn't compatibility work.
 
-In the long term the solution to this is what Lucee Lang is intended to solve in that it is seperate to the CFML compatibility layer.  In the short term though comprimises have to be made.
+In the long term the solution to this is what Lucee Lang is intended to solve in that it is separate to the CFML compatibility layer.  In the short term though compromises have to be made.
 
 Just because there is an Enhancement issue on the board doesn't mean it will actually get approved and be implemented, but likewise if it hasn't been asked for then the chance of it magically appearing far lower.
 
