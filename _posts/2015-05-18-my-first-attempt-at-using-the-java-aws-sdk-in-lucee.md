@@ -12,13 +12,13 @@ Before even thinking about calling the SDK methods you're going to need to have 
 
 If you open up that zip file you'll find a folder called **aws-java-sdk-x.x.x**, and if you dig further down a folder **lib**.  Within there are the jar files that you'll need.  At time of writing the precise file you're looking for here really is **aws-java-sdk-1.9.34/lib/aws-java-sdk-1.9.34.jar**.  Take this file and put it somewhere safe.  
 
-I decided to just put all the jar files here into **C:\Users\{my-user}\.CommandBox\lib** (because I'm using command box and am lazy).  I also put in all the jar files from **aws-java-sdk-1.9.34/third-party/*.jar**.  This may bite me in the arse later, but at least I can get on with playing with my poorly secured AIM user.
+I decided to just put all the jar files here into **C:\Users\{my-user}\.CommandBox\lib** (because I'm using command box and am lazy).  I also put in all the jar files from **aws-java-sdk-1.9.34/third-party/*.jar**.  This may bite me in the arse later, but at least I can get on with playing with my poorly secured IAM user.
 
-## Making a poorly secured AIM user
+## Making a poorly secured IAM user
 
-Yep you're going to need an AIM user.  Depending on whether you're being *really* lazy (and want to piss off the poor person dealing with security for your company) then you can just make a grant all user.  
+Yep you're going to need an IAM user.  Depending on whether you're being *really* lazy (and want to piss off the poor person dealing with security for your company) then you can just make a grant all user.  
 
-This is not really advisable.  So just go and get an AIM user made up with access to whatever it is you want to do - for this example I'll be creating some stuff in S3 so that's the access needed.  Make a note of the AWS access key ID and the AWS secret access key - you will be needing both of these.
+This is not really advisable.  So just go and get an IAM user made up with access to whatever it is you want to do - for this example I'll be creating some stuff in S3 so that's the access needed.  Make a note of the AWS access key ID and the AWS secret access key - you will be needing both of these.
 
 ## Reading the documentation
 
