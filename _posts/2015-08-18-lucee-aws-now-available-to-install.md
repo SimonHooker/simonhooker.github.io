@@ -19,25 +19,25 @@ The easiest way to install this at present is to use CommandBox.  To install thi
 I am not particularly happy with how I have got the AWS Java SDK handled at present in that you will need to add the path to them into your Application.cfc.  Adding the following to Application.cfc takes care of that.
 
 ```
-this.javaSettings = {
-    loadPaths: [
-        '/aws/aws-java-sdk/'
-    ]
-};
+    this.javaSettings = {
+        loadPaths: [
+            '/aws/aws-java-sdk/'
+        ]
+    };
 ```
 
 From there it's just a matter of invoking the various objects, here's some examples that interact with Amazon S3.
 
 ```
-s3 = new aws.s3( 
-  account = 'account_id',
-  secret = 'secret',
-  bucket = 'bucket_name'
-);
-
-s3.getObject( 'path/to/something.ext' );
-s3.putObject( 'path/to/something.ext' , 'data:image/png;base64,data_base64_encoded_here' );
-s3.deleteObject( 'path/to/something.ext' );
+    s3 = new aws.s3( 
+      account = 'account_id',
+      secret = 'secret',
+      bucket = 'bucket_name'
+    );
+    
+    s3.getObject( 'path/to/something.ext' );
+    s3.putObject( 'path/to/something.ext' , 'data:image/png;base64,data_base64_encoded_here' );
+    s3.deleteObject( 'path/to/something.ext' );
 ```
 
 Yep I'm still being lazy, most of the rest of that was lifted straight out of what I already wrote for the README.md, surprise!
