@@ -16,31 +16,33 @@ The Route53 client and I are not on friendly terms tonight.
 
 So all that aside, some code examples.
 
-  // Set up the route53 object
-  r53 = new aws.route53(
-    account = aws_accountid,
-    secret = aws_secretkey
-  );
+    // Set up the route53 object
+    r53 = new aws.route53(
+        account = aws_accountid,
+        secret = aws_secretkey
+    );
 
-  // Create a subdomain
-  addAliasSubdomain(
-    subdomain = 'lucee-aws.lucee.org',
-    targetELBHostedZoneID = elb_hostedzoneid,
-    targetELB = elb_subdomain
-  );
+    // Create a subdomain
+    addAliasSubdomain(
+        subdomain = 'lucee-aws.lucee.org',
+        targetELBHostedZoneID = elb_hostedzoneid,
+        targetELB = elb_subdomain
+    );
 
-  // Delete a domain
-  service.deleteAliasSubdomain(
-    subdomain = 'lucee-aws.lucee.org',
-    targetELBHostedZoneID = elb_hostedzoneid,
-    targetELB = elb_subdomain
-  );
+    // Delete a domain
+    service.deleteAliasSubdomain(
+        subdomain = 'lucee-aws.lucee.org',
+        targetELBHostedZoneID = elb_hostedzoneid,
+        targetELB = elb_subdomain
+    );
 
 In these examples you'll notice that I use the variables **elb_hostedzoneid** and **elb_subdomain**.  This is the part I don't really like.  I'd rather it was a bit clearer where you get these values from.
 
 I've so far just got them by looking at Route53 for domains I've already set up.  In the image below I've shown where you can see the values which can be supplied for **elb_hostedzoneid** and **elb_subdomain**.
 
 {% include image.html url="/assets/2015-08-20-lucee-aws-basic-route53-cfc.png" description="Route53 admin panel" %}
+
+Oh and don't ask me why you need to supply them to delete, it'd be really nice if you didn't need to go doing that but there you go, for a first draft it'll do but I'm really not happy with it.
 
 ## What's next?
 
